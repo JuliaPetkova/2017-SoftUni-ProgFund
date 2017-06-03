@@ -20,8 +20,6 @@ namespace _4_2_07_ExchangeVariables
             b = c;
 
             Console.WriteLine($"After: \na = {a}\nb = {b}");
-
-
         }
     }
 }
