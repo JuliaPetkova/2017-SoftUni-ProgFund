@@ -17,7 +17,6 @@ namespace _4_2_02_PracticeFloatNum
             Console.WriteLine(num1);
             Console.WriteLine(num2);
             Console.WriteLine(num3);
-
         }
     }
 }

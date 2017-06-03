@@ -13,7 +13,7 @@ namespace _4_2_03_PracticeCharAdnString
             string str1 = Console.ReadLine();
             char char1 = char.Parse(Console.ReadLine());
             char char2 = char.Parse(Console.ReadLine());
-            char char3= char.Parse(Console.ReadLine());
+            char char3 = char.Parse(Console.ReadLine());
             string str2 = Console.ReadLine();
 
             Console.WriteLine(str1);
@@ -21,10 +21,6 @@ namespace _4_2_03_PracticeCharAdnString
             Console.WriteLine(char2);
             Console.WriteLine(char3);
             Console.WriteLine(str2);
-
-
-
-
         }
     }
 }

@@ -10,8 +10,9 @@ namespace _4_2_04_VarHEXandDEC
     {
         static void Main(string[] args)
         {
-            int hex = 0xFE;
-            Console.WriteLine(hex);
+            string hex = Console.ReadLine();
+            int dec = Convert.ToInt32(hex, 16);
+            Console.WriteLine(dec);
         }
     }
 }
