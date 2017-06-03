@@ -24,7 +24,6 @@ namespace _4_2_15_RefactorFastPrimeChecker
                     }
                 }
                 Console.WriteLine($"{num} -> {isPrime}");
-
             }
         }
     }
