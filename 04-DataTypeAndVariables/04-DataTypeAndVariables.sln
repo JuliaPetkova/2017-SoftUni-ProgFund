@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-1-07-Greeting", "4-1-07-G
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-1-08-RefactorVolumePyramid", "4-1-08-RefactorVolumePyramid\4-1-08-RefactorVolumePyramid.csproj", "{51FD0911-D868-4E91-93E7-54261ABC087B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "!4-1-09-RefactorSpecialNumbers", "!4-1-09-RefactorSpecialNumbers\!4-1-09-RefactorSpecialNumbers.csproj", "{500820BB-724E-4E68-92D8-D635B2548081}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-1-09-RefactorSpecialNumbers", "!4-1-09-RefactorSpecialNumbers\4-1-09-RefactorSpecialNumbers.csproj", "{500820BB-724E-4E68-92D8-D635B2548081}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-2-01-PracticeIntNum", "4-2-01-PracticeIntNum\4-2-01-PracticeIntNum.csproj", "{E6F27619-D134-4A86-BD5B-0858761F7443}"
 EndProject

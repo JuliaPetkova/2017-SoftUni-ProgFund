@@ -25,7 +25,6 @@ namespace _4_1_05_SpecialNum
                     sum = sum + num % 10;
                     num = num / 10;
                 }
-
                 isSpecial = ((sum == 5) || (sum == 7) || (sum == 11));
                 Console.WriteLine($"{currentNum} -> {isSpecial}");
             }
