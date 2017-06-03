@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2__10. Multiplication Table
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2__11. Odd Number", "2__11. Odd Number\2__11. Odd Number.csproj", "{E604CC7B-F1E7-4ECE-94B2-3C28A9133BCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2__12", "2__12\2__12.csproj", "{53E604F9-C135-439C-A63C-B68253398B7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-12-IsNumber", "2__12\2-12-IsNumber.csproj", "{53E604F9-C135-439C-A63C-B68253398B7E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-6-01Choose a Drink", "2-6-01Choose a Drink\2-6-01Choose a Drink.csproj", "{913B4F64-1E07-43A3-8CA6-4E5D45566464}"
 EndProject
