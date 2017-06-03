@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2018952F-0A9E-4044-AECF-7CF6B7EB23EB}</ProjectGuid>
+    <ProjectGuid>{DECDF7DE-F59B-4BE3-84F0-A117D6BE7841}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_4_3_01_Type_Boundaries</RootNamespace>
-    <AssemblyName>4-3-01-Type Boundaries</AssemblyName>
+    <RootNamespace>_4_2_18_DifferentIntegerSize</RootNamespace>
+    <AssemblyName>4-2-18-DifferentIntegerSize</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="4-3-01-Type Boundaries.cs" />
+    <Compile Include="4-2-18-DifferentIntegerSize.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
