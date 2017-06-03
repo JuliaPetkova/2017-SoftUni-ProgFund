@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-2-15-RefactorFastPrimeChe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-2-16-CompareFloats", "4-2-16-CompareFloats\4-2-16-CompareFloats.csproj", "{CEF0FA83-329D-4BFE-AB62-AF940E930FFD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-2-17-ASCIItable", "4-2-17-ASCIItable\4-2-17-ASCIItable.csproj", "{EA42EE26-F4B7-475D-B9AC-B0613DB9F788}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +197,10 @@ Global
 		{CEF0FA83-329D-4BFE-AB62-AF940E930FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEF0FA83-329D-4BFE-AB62-AF940E930FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEF0FA83-329D-4BFE-AB62-AF940E930FFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA42EE26-F4B7-475D-B9AC-B0613DB9F788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA42EE26-F4B7-475D-B9AC-B0613DB9F788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA42EE26-F4B7-475D-B9AC-B0613DB9F788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA42EE26-F4B7-475D-B9AC-B0613DB9F788}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
