@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-2-13-VowelOrDigit", "4-2-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-2-14-IntegerHexBinary", "4-2-14-IntegerHexBinary\4-2-14-IntegerHexBinary.csproj", "{828FA567-4BC1-4769-A7FB-F3317A38CEFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-2-15-RefactorFastPrimeChecker", "4-2-15-RefactorFastPrimeChecker\4-2-15-RefactorFastPrimeChecker.csproj", "{65BED777-E6F2-4EA0-9D9D-D89353103D76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +185,10 @@ Global
 		{828FA567-4BC1-4769-A7FB-F3317A38CEFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{828FA567-4BC1-4769-A7FB-F3317A38CEFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{828FA567-4BC1-4769-A7FB-F3317A38CEFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65BED777-E6F2-4EA0-9D9D-D89353103D76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65BED777-E6F2-4EA0-9D9D-D89353103D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65BED777-E6F2-4EA0-9D9D-D89353103D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65BED777-E6F2-4EA0-9D9D-D89353103D76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
