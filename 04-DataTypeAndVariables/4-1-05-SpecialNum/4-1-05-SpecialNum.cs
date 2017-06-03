@@ -11,27 +11,23 @@ namespace _4_1_05_SpecialNum
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
+            int num = 0;
 
             for (int i = 1; i <= n; i++)
             {
                 int sum = 0;
-                int num = 0;
                 bool isSpecial = true;
                 num = i;
                 int currentNum = i;
 
                 while (num > 0)
                 {
-
                     sum = sum + num % 10;
                     num = num / 10;
-
                 }
 
                 isSpecial = ((sum == 5) || (sum == 7) || (sum == 11));
                 Console.WriteLine($"{currentNum} -> {isSpecial}");
-
-
             }
         }
     }

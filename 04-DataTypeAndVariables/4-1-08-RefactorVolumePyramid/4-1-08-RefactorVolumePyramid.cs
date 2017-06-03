@@ -12,10 +12,10 @@ namespace _4_1_08_RefactorVolumePyramid
         {
             double lenght, widht, height;
 
-            Console.Write("Lenght: ");
+            Console.Write("Length: ");
             lenght = double.Parse(Console.ReadLine());
 
-            Console.Write("Widht: ");
+            Console.Write("Width: ");
             widht = double.Parse(Console.ReadLine());
 
             Console.Write("Height: ");
@@ -23,9 +23,6 @@ namespace _4_1_08_RefactorVolumePyramid
 
             double volume = (lenght * widht * height) / 3;
             Console.WriteLine("Pyramid Volume: {0:F2}", volume);
-
-
-
         }
     }
 }

@@ -15,7 +15,6 @@ namespace _4_1_04_Elevator
 
             double numCourses = Math.Ceiling(people / capacity);
             Console.WriteLine(numCourses);
-
         }
     }
 }
