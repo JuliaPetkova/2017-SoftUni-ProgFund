@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _4_3_06_CatchTheThief
+namespace _4_3_07_SentenceTheThief
 {
     class Program
     {
@@ -14,9 +14,11 @@ namespace _4_3_06_CatchTheThief
 
             int countIDs = int.Parse(Console.ReadLine());
 
-            if (dataTypeId == "sbyte")
+            long biggerId = 0;
+
+            if (dataTypeId == "sbyte")      // sbyte
             {
-                sbyte biggerId = sbyte.MinValue;
+                biggerId = sbyte.MinValue;
                 sbyte tempId = sbyte.MinValue;
 
                 for (int i = 1; i <= countIDs; i++)
@@ -31,18 +33,15 @@ namespace _4_3_06_CatchTheThief
                             biggerId = tempId;
                         }
                     }
-
                     catch (Exception)
                     {
                     }
                 }
-                Console.WriteLine(biggerId);
             }
 
-
-            else if (dataTypeId == "int")
+            else if (dataTypeId == "int")       //int
             {
-                int biggerId = int.MinValue;
+                biggerId = int.MinValue;
                 int tempId = int.MinValue;
 
                 for (int i = 1; i <= countIDs; i++)
@@ -57,17 +56,15 @@ namespace _4_3_06_CatchTheThief
                             biggerId = tempId;
                         }
                     }
-
                     catch (Exception)
                     {
                     }
                 }
-                Console.WriteLine(biggerId);
             }
 
-            else if (dataTypeId == "long")
+            else if (dataTypeId == "long")      // lon
             {
-                long biggerId = long.MinValue;
+                biggerId = long.MinValue;
                 long tempId = long.MinValue;
 
                 for (int i = 1; i <= countIDs; i++)
@@ -82,15 +79,24 @@ namespace _4_3_06_CatchTheThief
                             biggerId = tempId;
                         }
                     }
-
                     catch (Exception)
                     {
                     }
                 }
-                Console.WriteLine(biggerId);
             }
 
+
+            if (biggerId > 0)
+            {
+              
+                long sentence = (long)Math.Ceiling((decimal)biggerId / sbyte.MaxValue);
+                Console.WriteLine($"Prisoner with id {biggerId} is sentenced to {sentence} " + (sentence > 1 ? "years" : $"year"));
+            }
+            else
+            {
+                long sentence = (long)Math.Ceiling((decimal)biggerId / sbyte.MinValue);
+                Console.WriteLine($"Prisoner with id {biggerId} is sentenced to {sentence} " + (sentence > 1 ? "years" : $"year"));
+            }
         }
     }
 }
-
