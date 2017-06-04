@@ -10,20 +10,91 @@ namespace _4_3_06_CatchTheThief
     {
         static void Main(string[] args)
         {
-            string typeId = Console.ReadLine();
-            int n = int.Parse(Console.ReadLine());
-            long num = 0;
-            int
+            string dataTypeId = Console.ReadLine();
 
-            for (int i = 0; i < n; i++)
+            int countIDs = int.Parse(Console.ReadLine());
+
+            if (dataTypeId == "sbyte")
             {
-                num = int.Parse(Console.ReadLine());
+                sbyte biggerId = sbyte.MinValue;
+                sbyte tempId = sbyte.MinValue;
 
-                if (typeId == "sbyte"&& (nu))
+                for (int i = 1; i <= countIDs; i++)
                 {
-                    num = 
+                    try
+                    {
+                        sbyte numID = sbyte.Parse(Console.ReadLine());
+                        tempId = numID;
+
+                        if (tempId > biggerId)
+                        {
+                            biggerId = tempId;
+                        }
+                        else
+                        {
+                            continue;
+                        }
+                    }
+
+                    catch (Exception)
+                    {
+                    }
                 }
+                Console.WriteLine(biggerId);
             }
+
+
+            else if (dataTypeId == "int")
+            {
+                int biggerId = int.MinValue;
+                int tempId = int.MinValue;
+
+                for (int i = 1; i <= countIDs; i++)
+                {
+                    try
+                    {
+                        int numID = int.Parse(Console.ReadLine());
+                        tempId = numID;
+
+                        if (tempId > biggerId)
+                        {
+                            biggerId = tempId;
+                        }
+                    }
+
+                    catch (Exception)
+                    {
+                    }
+                }
+                Console.WriteLine(biggerId);
+            }
+
+            else if (dataTypeId == "long")
+            {
+                long biggerId = long.MinValue;
+                long tempId = long.MinValue;
+
+                for (int i = 1; i <= countIDs; i++)
+                {
+                    try
+                    {
+                        long numID = long.Parse(Console.ReadLine());
+                        tempId = numID;
+
+                        if (tempId > biggerId)
+                        {
+                            biggerId = tempId;
+                        }
+                    }
+
+                    catch (Exception)
+                    {
+                    }
+                }
+                Console.WriteLine(biggerId);
+            }
+
         }
     }
 }
+

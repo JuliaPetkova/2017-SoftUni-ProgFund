@@ -18,7 +18,7 @@ namespace _4_3_14_BoatSimulator
             int scoreBoat1 = 0;
             int scoreBoat2 = 0;
 
-            for (int moveIndex = 1; moveIndex <= movesCount; moveIndex++)
+            for (int i = 1; i <= movesCount; i++)
             {
                 string inputStr = Console.ReadLine();
 
@@ -28,7 +28,7 @@ namespace _4_3_14_BoatSimulator
                     boat2 += (char)3;
                     continue;
                 }
-                if (moveIndex % 2 == 1)
+                if (i % 2 == 1)
                 {
                     scoreBoat1 += inputStr.Length;
                 }
