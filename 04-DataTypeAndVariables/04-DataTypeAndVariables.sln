@@ -77,6 +77,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-3-10-SumOfChars", "4-3-10
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-3-11-StringConcatenation", "4-3-11-StringConcatenation\4-3-11-StringConcatenation.csproj", "{B3A5487A-2475-41A3-B0FF-3DCB51D7C417}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-3-12-BeerKegs", "4-3-12-BeerKegs\4-3-12-BeerKegs.csproj", "{E7404C79-060C-4BDA-ABF4-63D6188E2D53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -231,6 +233,10 @@ Global
 		{B3A5487A-2475-41A3-B0FF-3DCB51D7C417}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3A5487A-2475-41A3-B0FF-3DCB51D7C417}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3A5487A-2475-41A3-B0FF-3DCB51D7C417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7404C79-060C-4BDA-ABF4-63D6188E2D53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7404C79-060C-4BDA-ABF4-63D6188E2D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7404C79-060C-4BDA-ABF4-63D6188E2D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7404C79-060C-4BDA-ABF4-63D6188E2D53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
