@@ -81,6 +81,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-3-12-BeerKegs", "4-3-12-B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-3-13-DecryptingMessages", "4-3-13-DecryptingMessages\4-3-13-DecryptingMessages.csproj", "{DBC28973-1873-4594-8811-62567924B13F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-3-14-BoatSimulator", "4-3-14-BoatSimulator\4-3-14-BoatSimulator.csproj", "{9BD6A3F5-DB40-43CD-B4DB-B4E58FD9CD52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -243,6 +245,10 @@ Global
 		{DBC28973-1873-4594-8811-62567924B13F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBC28973-1873-4594-8811-62567924B13F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBC28973-1873-4594-8811-62567924B13F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BD6A3F5-DB40-43CD-B4DB-B4E58FD9CD52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD6A3F5-DB40-43CD-B4DB-B4E58FD9CD52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD6A3F5-DB40-43CD-B4DB-B4E58FD9CD52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD6A3F5-DB40-43CD-B4DB-B4E58FD9CD52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
