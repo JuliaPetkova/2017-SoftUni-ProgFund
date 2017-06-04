@@ -11,18 +11,18 @@ namespace _4_3_02_NumChecker
         static void Main(string[] args)
         {
             string inputNumber = Console.ReadLine();
-            string resultType = string.Empty;
+            string typeInputNum = string.Empty;
 
             if (inputNumber.Contains('.'))
             {
-                resultType = "floating-point";
+                typeInputNum = "floating-point";
             }
             else
             {
-                resultType = "integer";
+                typeInputNum = "integer";
             }
 
-            Console.WriteLine(resultType);
+            Console.WriteLine(typeInputNum);
         }
     }
 }

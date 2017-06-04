@@ -11,33 +11,23 @@ namespace _4_3_03_WaterOverflow
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-
-            double sum = 0;
-            // double litters = 0;
+            int sum = 0;
 
             for (int i = 1; i <= n; i++)
             {
-                double litters = double.Parse(Console.ReadLine());
+                int litters = int.Parse(Console.ReadLine());
 
-                if (litters > 255)
+                if (sum + litters > 255)
                 {
                     Console.WriteLine("Insufficient capacity!");
-                    Console.WriteLine(0);
-                    return;
                 }
                 else
                 {
                     sum = sum + litters;
-
-                    if (sum > 255.0)
-                    {
-                        Console.WriteLine("Insufficient capacity!");
-                        sum -= litters;
-                    }
                 }
             }
-            Console.WriteLine(sum);
 
+            Console.WriteLine(sum);
         }
     }
 }
