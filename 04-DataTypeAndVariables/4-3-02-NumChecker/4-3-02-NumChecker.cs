@@ -10,22 +10,20 @@ namespace _4_3_02_NumChecker
     {
         static void Main(string[] args)
         {
-            string str = Console.ReadLine();
-            int numInt;
-            float numFloat;
+            string inputNumber = Console.ReadLine();
+            string resultType = string.Empty;
 
-            bool isInt = int.TryParse(str, out numInt);
-            bool isFloat = float.TryParse(str, out numFloat);
-
-
-            if (isInt)
+            if (inputNumber.Contains('.'))
             {
-                Console.WriteLine("integer");
+                resultType = "floating-point";
             }
-            else if (isFloat)
+            else
             {
-                Console.WriteLine("floating-point");
+                resultType = "integer";
             }
+
+            Console.WriteLine(resultType);
         }
     }
 }
+
