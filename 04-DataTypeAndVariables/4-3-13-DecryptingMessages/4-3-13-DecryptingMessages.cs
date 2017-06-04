@@ -14,16 +14,16 @@ namespace _4_3_13_DecryptingMessages
 
             int numChars = int.Parse(Console.ReadLine());
 
-            string message = "";
+            string message = string.Empty;
             
             for (int i = 1; i <= numChars; i++)
             {
                 char letter = char.Parse(Console.ReadLine());
                 int letterTemp = Convert.ToInt32(letter);
 
-                int letterFitted = letterTemp + key;
+                int letterPlusKey = letterTemp + key;
 
-                letter = Convert.ToChar(letterFitted);
+                letter = Convert.ToChar(letterPlusKey);
                 message += letter;
             }
             Console.WriteLine(message);
