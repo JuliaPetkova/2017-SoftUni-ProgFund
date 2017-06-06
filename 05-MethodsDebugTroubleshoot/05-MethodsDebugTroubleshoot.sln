@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-2-03-EnglNameLastDigit", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-2-04-NumOfReverseOrder", "5-2-04-NumOfReverseOrder\5-2-04-NumOfReverseOrder.csproj", "{285C16BE-3D1C-49CF-8400-399C0DA0A2D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-2-06-PrimeChecker", "5-2-06-PrimeChecker\5-2-06-PrimeChecker.csproj", "{32A0931A-F1F8-4AFB-AAB5-33B2C4AE643F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{285C16BE-3D1C-49CF-8400-399C0DA0A2D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{285C16BE-3D1C-49CF-8400-399C0DA0A2D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{285C16BE-3D1C-49CF-8400-399C0DA0A2D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32A0931A-F1F8-4AFB-AAB5-33B2C4AE643F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A0931A-F1F8-4AFB-AAB5-33B2C4AE643F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A0931A-F1F8-4AFB-AAB5-33B2C4AE643F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A0931A-F1F8-4AFB-AAB5-33B2C4AE643F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
