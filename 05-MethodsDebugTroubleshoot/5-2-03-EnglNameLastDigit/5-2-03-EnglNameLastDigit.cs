@@ -9,12 +9,25 @@ namespace _5_2_03_EnglNameLastDigit
     class Program
     {
 
-        static void LastDigitName()
+
+        static void Main(string[] args)
         {
-            int num = int.Parse(Console.ReadLine());
-            num = num % 10;
-            switch (num)
+            long num = long.Parse(Console.ReadLine());
+
+            var lastDigit = GetLastDigit(num);
+            var lastDigitName = GetLastDigitName(lastDigit);
+        }
+
+        static string GetLastDigitName(long lastDigit)
+        {
+            string lastDigitName = string.Empty;
+
+            switch (lastDigit)
             {
+                case 0:
+                    Console.WriteLine("zero");
+                    break;
+
                 case 1:
                     Console.WriteLine("one");
                     break;
@@ -52,14 +65,16 @@ namespace _5_2_03_EnglNameLastDigit
                     break;
 
                 default:
-                    Console.WriteLine("zеro");
                     break;
             }
+            return lastDigitName;
         }
 
-        static void Main(string[] args)
+        static long GetLastDigit(long num)
         {
-            LastDigitName();
+            long lastDigit = num % 10;
+            return (int)Math.Abs(lastDigit);
         }
     }
 }
+
