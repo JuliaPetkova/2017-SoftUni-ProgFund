@@ -5,11 +5,15 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-1-01-BlankReceipt", "5-1-01-BlankReceipt\5-1-01-BlankReceipt.csproj", "{19BD2BFA-9B07-4BDA-94E0-97ED85DBBA12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-2-02-SignIntegerNumber", "5-2-02-SignIntegerNumber\5-2-02-SignIntegerNumber.csproj", "{03AA83A3-E4C9-4DA6-A939-6BE8A96DCFF0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-1-02-SignIntegerNumber", "5-2-02-SignIntegerNumber\5-1-02-SignIntegerNumber.csproj", "{03AA83A3-E4C9-4DA6-A939-6BE8A96DCFF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-2-03-PrintingTriangle", "5-2-03-PrintingTriangle\5-2-03-PrintingTriangle.csproj", "{CF052572-864D-4E1C-9BEE-3DDF3B5C683C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-1-03-PrintingTriangle", "5-2-03-PrintingTriangle\5-1-03-PrintingTriangle.csproj", "{CF052572-864D-4E1C-9BEE-3DDF3B5C683C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-2-04-DrawFilledSquare", "5-2-04-DrawFilledSquare\5-2-04-DrawFilledSquare.csproj", "{CCF3EC2A-0B37-43EF-8CE6-34AF4BABD85A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-1-04-DrawFilledSquare", "5-2-04-DrawFilledSquare\5-1-04-DrawFilledSquare.csproj", "{CCF3EC2A-0B37-43EF-8CE6-34AF4BABD85A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-2-01-Hello", "5-2-01-Hello\5-2-01-Hello.csproj", "{579EF7F6-2405-4C3D-AE32-19025119697A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-2-02-MaxMethod", "5-2-02-MaxMethod\5-2-02-MaxMethod.csproj", "{088B7D11-65EE-4047-8CC5-5E14311F5E64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{CCF3EC2A-0B37-43EF-8CE6-34AF4BABD85A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCF3EC2A-0B37-43EF-8CE6-34AF4BABD85A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCF3EC2A-0B37-43EF-8CE6-34AF4BABD85A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{579EF7F6-2405-4C3D-AE32-19025119697A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{579EF7F6-2405-4C3D-AE32-19025119697A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{579EF7F6-2405-4C3D-AE32-19025119697A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{579EF7F6-2405-4C3D-AE32-19025119697A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{088B7D11-65EE-4047-8CC5-5E14311F5E64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088B7D11-65EE-4047-8CC5-5E14311F5E64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088B7D11-65EE-4047-8CC5-5E14311F5E64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088B7D11-65EE-4047-8CC5-5E14311F5E64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
