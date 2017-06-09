@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace _4_3_02_NumChecker
 {
@@ -10,19 +7,26 @@ namespace _4_3_02_NumChecker
     {
         static void Main(string[] args)
         {
-            string inputNumber = Console.ReadLine();
-            string typeInputNum = string.Empty;
+            string number = Console.ReadLine(); // var ---> not good idea
 
-            if (inputNumber.Contains('.'))
+            try
             {
-                typeInputNum = "floating-point";
+                long.Parse(number);      // int --->not good idea
+                Console.WriteLine("integer");
             }
-            else
+            catch
             {
-                typeInputNum = "integer";
-            }
+                try
+                {
+                    double.Parse(number);
+                    Console.WriteLine("floating-point");
 
-            Console.WriteLine(typeInputNum);
+                }
+                catch
+                {
+
+                }
+            }
         }
     }
 }

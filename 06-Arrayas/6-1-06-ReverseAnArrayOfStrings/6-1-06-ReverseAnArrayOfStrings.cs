@@ -16,7 +16,7 @@ namespace _6_1_06_ReverseAnArrayOfStrings
 
             foreach (string value in array)
             {
-                Console.Write(value+' ');
+                Console.Write(value + ' ');
             }
             Console.WriteLine();
         }

@@ -40,9 +40,6 @@ namespace _4_3_04_TouristInfo
                     val = valueImUnits * 3.8;
                     Console.WriteLine($"{valueImUnits} {imUnits} = {val:F2} liters");
                     break;
-
-
-
                 default:
                     break;
             }
