@@ -43,6 +43,7 @@ namespace _5_2_09_LongerLine
  
             string smallestToZero = string.Empty;
 
+
             if (l1 < l2)
             {
                 smallestToZero = ($"({x1}, {y1})({x2}, {y2})");
