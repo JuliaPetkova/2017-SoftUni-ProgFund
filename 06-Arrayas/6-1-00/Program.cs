@@ -8,26 +8,18 @@ namespace _program
     {
         static void Main(string[] args)
         {
-            var arr1 = Console.ReadLine().Split();
-            var arr2 = Console.ReadLine().Split();
+            string word = Console.ReadLine();
 
-            int leftCount = 0;
-            int rightCount = 0;
+            char[] arr = new char[26]; // 26 are the Engl alphabeta
 
-            int length = Math.Min(arr1.Length, arr2.Length);
-
-            for (int i = 0; i < length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
-                if (arr1[i] == arr2[i])
-                {
-                    leftCount += 1;
-                }
-                if (arr1[arr1.Length - 1 - i] == arr2[arr2.Length - 1 - i])
-                {
-                    rightCount += 1;
-                }
+                arr[i] = (char)(97 + i);
             }
-            Console.WriteLine(Math.Max(leftCount, rightCount));
+            for (int i = 0; i < word.Length; i++)
+            {
+                Console.WriteLine(word[i] + " -> " + Array.IndexOf(arr, word[i]));
+            }
         }
     }
 }

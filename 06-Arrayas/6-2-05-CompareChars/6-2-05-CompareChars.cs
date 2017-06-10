@@ -36,8 +36,7 @@ namespace _6_2_05_CompareChars
                     {
                         Console.WriteLine("{0}\n{1}", string.Join("", arr1), string.Join("", arr2));
                         break;
-                    }
-  
+                    }  
                 }
             }
         }
