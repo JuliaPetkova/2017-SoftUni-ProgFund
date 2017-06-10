@@ -25,7 +25,7 @@ namespace _5_2_06_PrimeChecker
                 return false;
             }
 
-            for (int i = 2; i <= Math.Sqrt(num); i++) // for (int i = 2; i < num; i++) too long
+            for (int i = 2; i <= Math.Sqrt(num); i++) // optimization--> Math.Sqrt(num) instead of (n)
             {
                 if (num % i == 0)
                 {
