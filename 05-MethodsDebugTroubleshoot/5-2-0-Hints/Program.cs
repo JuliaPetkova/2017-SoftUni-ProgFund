@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _5_2_03_PrintingTriangle
+namespace _5_2_0_Hints
 {
     class Program
     {
@@ -25,11 +25,11 @@ namespace _5_2_03_PrintingTriangle
             {
                 PrintLine(1, i);
             }
-            
+
             for (int i = n - 1; i >= 1; i--)
             {
-              PrintLine(1, i);
-            }   
+                PrintLine(1, i);
+            }
         }
     }
 }

@@ -1,33 +1,40 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace _5_2_04_DrawFilledSquare
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int n = int.Parse(Console.ReadLine());
 
-            PrintFirstLastLine(n);
-            PrintBodyLine(n);
-            PrintFirstLastLine(n);
+            PrintLine(n);
+
+            for (int i = 0; i < n - 2; i++)
+            {
+                PrintBody(n);
+            }
+
+            PrintLine(n);
 
         }
 
-        static void PrintBodyLine(int n)
+        private static void PrintBody(int n)
         {
-            Console.WriteLine("-"+new string('-', n-2));
+            Console.Write('-');
+
+            for (int i = 1; i <= n - 1; i++)
+            {
+                Console.Write("\\/");
+            }
+            Console.WriteLine('-');
 
         }
 
-        static void PrintFirstLastLine(int n)
+        static void PrintLine(int n)
         {
-            Console.WriteLine(new string('-', n));
+            Console.WriteLine(new string('-', 2 * n));
         }
-
     }
 }
