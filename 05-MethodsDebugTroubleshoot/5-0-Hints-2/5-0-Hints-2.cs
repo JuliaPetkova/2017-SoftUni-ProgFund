@@ -10,20 +10,15 @@ namespace _5_0_Hints_2
     {
         static void Main(string[] args)
         {
-            var num = SmallestNumSumDigits(23);
-            Console.WriteLine(num);
+            double num = Math.Abs(double.Parse(Console.ReadLine()));
+            var reversedNum = ReverseNumber(num);
+            Console.WriteLine(reversedNum);
         }
 
-        static int SmallestNumSumDigits(int num)
+        static double ReverseNumber(double num)
         {
-            num = 0;
-            while (true)
-            {
-                if (SumOfDigits(num) == num)
-                {
-
-                }
-            }
+            string number = num.ToString();
+            number = number.Reverse();
         }
     }
 }
