@@ -7,34 +7,14 @@ namespace _5_2_04_DrawFilledSquare
     {
         static void Main()
         {
-            int n = int.Parse(Console.ReadLine());
-
-            PrintLine(n);
-
-            for (int i = 0; i < n - 2; i++)
-            {
-                PrintBody(n);
-            }
-
-            PrintLine(n);
-
+            var p = 10;
+            var multuply = MultiPlyBy5(p);
+           Console.WriteLine(multuply);
         }
 
-        private static void PrintBody(int n)
+        static int MultiPlyBy5(int p)
         {
-            Console.Write('-');
-
-            for (int i = 1; i <= n - 1; i++)
-            {
-                Console.Write("\\/");
-            }
-            Console.WriteLine('-');
-
-        }
-
-        static void PrintLine(int n)
-        {
-            Console.WriteLine(new string('-', 2 * n));
+            return 5 * p;
         }
     }
 }
