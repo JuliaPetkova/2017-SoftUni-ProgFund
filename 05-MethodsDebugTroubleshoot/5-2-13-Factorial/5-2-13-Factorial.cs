@@ -24,7 +24,6 @@ namespace _5_2_13_Factorial
                 factorial *= i;
             }
             Console.WriteLine(factorial);
-
         }
     }
 }
