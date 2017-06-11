@@ -23,7 +23,9 @@ namespace _6_1_09_ExractMidlleElements
                 Console.WriteLine($"{arr[midPointArr - 1]} {arr[midPointArr]}");
             }
             else
+            {
                 Console.WriteLine($"{arr[midPointArr - 1]} {arr[midPointArr]} {arr[midPointArr + 1]}");
+            }
         }
     }
 }
