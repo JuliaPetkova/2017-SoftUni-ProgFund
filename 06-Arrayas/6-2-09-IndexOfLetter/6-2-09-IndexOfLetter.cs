@@ -10,8 +10,18 @@ namespace _6_2_09_IndexOfLetter
     {
         static void Main(string[] args)
         {
-            string[] arr = { "Mimi", "Wesi", "Misho", "Penko" };
-            Console.WriteLine(string.Join(" + ", arr));
+            string word = Console.ReadLine();
+
+            char[] arr = new char[26]; // 26 are the Engl alphabeta
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = (char)(97 + i);
+            }
+            for (int i = 0; i < word.Length; i++)
+            {
+                Console.WriteLine(word[i] + " -> " + Array.IndexOf(arr, word[i]));
+            }
 
         }
     }

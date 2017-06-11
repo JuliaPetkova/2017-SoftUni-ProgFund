@@ -8,18 +8,30 @@ namespace _program
     {
         static void Main(string[] args)
         {
-            string word = Console.ReadLine();
+            var arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
-            char[] arr = new char[26]; // 26 are the Engl alphabeta
+            int sum = 0;
+            int count = 0;
 
-            for (int i = 0; i < arr.Length; i++)
+            for (int i = 0; i <= arr.Length - 1; i++)
             {
-                arr[i] = (char)(97 + i);
+                for (int j = i+1; j <= arr.Length - 1; j++)
+                {
+                    sum = arr[i] + arr[j];
+
+                    if (arr.Contains(sum))
+                    {
+                        Console.WriteLine($"{i} + {j} == {sum}");
+                        count += 1;
+                    }
+                }
+
             }
-            for (int i = 0; i < word.Length; i++)
+            if (count == 0)
             {
-                Console.WriteLine(word[i] + " -> " + Array.IndexOf(arr, word[i]));
-            }
+                Console.WriteLine("No");
+            }          
+
         }
     }
 }
