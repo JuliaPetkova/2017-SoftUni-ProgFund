@@ -20,7 +20,8 @@ namespace _6_2_09_IndexOfLetter
             }
             for (int i = 0; i < str.Length; i++)
             {
-                Console.WriteLine(str[i] + " -> " + Array.IndexOf(arr, str[i]));
+                // Console.WriteLine(str[i] + " -> " + Array.IndexOf(arr, str[i]));
+                Console.WriteLine($"{str[i]} -> {Array.IndexOf(arr, str[i])}");
             }
 
         }
