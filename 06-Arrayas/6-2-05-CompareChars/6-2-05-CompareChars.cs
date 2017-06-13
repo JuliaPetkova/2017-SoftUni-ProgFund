@@ -17,25 +17,29 @@ namespace _6_2_05_CompareChars
 
             if (arr1.Length < arr2.Length)
             {
-                Console.WriteLine("{0}\n{1}", string.Join("", arr1), string.Join("", arr2));
+                Console.WriteLine(string.Join("", arr1));
+                Console.WriteLine(string.Join("", arr2));
             }
             else if (arr1.Length > arr2.Length)
             {
-                Console.WriteLine("{0}\n{1}", string.Join("", arr2), string.Join("", arr1));
+                Console.WriteLine(string.Join("", arr2));
+                Console.WriteLine(string.Join("", arr1));
             }
             else if (arr1.Length == arr2.Length)
             {
                 for (int i = 0; i < minLength; i++)
                 {
-                    if (arr1[i] > arr2[i])
+                    if (arr1[i] < arr2[i])
                     {
-                        Console.WriteLine("{0}\n{1}", string.Join("", arr2), string.Join("", arr1));
-                        break;
+                        Console.WriteLine(string.Join("", arr1));
+                        Console.WriteLine(string.Join("", arr2));
+                        return;
                     }
-                    else if (arr1[i] <= arr2[i])
+                    else if (arr1[i] >= arr2[i])
                     {
-                        Console.WriteLine("{0}\n{1}", string.Join("", arr1), string.Join("", arr2));
-                        break;
+                        Console.WriteLine(string.Join("", arr2));
+                        Console.WriteLine(string.Join("", arr1));
+                        return;
                     }  
                 }
             }

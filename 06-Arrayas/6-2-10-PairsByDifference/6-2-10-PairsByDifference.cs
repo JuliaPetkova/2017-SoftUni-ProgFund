@@ -10,48 +10,48 @@ namespace _6_2_10_PairsByDifference
     {
         static void Main(string[] args)
         {
-            int[] array = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            char[] arr1 = Console.ReadLine().Split().Select(char.Parse).ToArray();
+            char[] arr2 = Console.ReadLine().Split().Select(char.Parse).ToArray();
 
-            if (array.Length == 1)
+            int minLength = Math.Min(arr1.Length, arr2.Length);
+            // int maxLength = Math.Max(arr1.Length, arr2.Length);
+
+
+            if (arr1.Length > arr2.Length)
             {
-                Console.WriteLine("0"); return;
+                Console.WriteLine(string.Join("", arr1));
+                Console.WriteLine(string.Join("", arr2));
+                return;
+            }
+            if (arr1.Length < arr2.Length)
+            {
+                Console.WriteLine(string.Join("", arr2));
+                Console.WriteLine(string.Join("", arr1));
+                return;
             }
 
-            int leftSum = 0;
-            int rightSum = 0;
-            bool isFound = false;
-
-            for (int i = 0; i < array.Length; i++) 
+            for (int i = 0; i < minLength; i++)
             {
-
-                for (int left = 0; left < i; left++)
+                if (arr1[i] >= arr2[i])
                 {
-                    leftSum += array[left];
+                    Console.WriteLine(string.Join("", arr1));
+                    Console.WriteLine(string.Join("", arr2));
+                    return;
                 }
-
-                for (int right = i + 1; right < array.Length; right++)
+                else if (arr1[i] < arr2[i])
                 {
-                    rightSum += array[right];
-                }
+                    Console.WriteLine(string.Join("", arr2));
+                    Console.WriteLine(string.Join("", arr1));
+                    break;
 
-                if (leftSum == rightSum)
-                {
-                    Console.WriteLine(i);
-                    isFound = true;
-                }
-                else
-                {
-                    leftSum = 0;
-                    rightSum = 0;
-                }
-            }
 
-            if (isFound == false)
-            {
-                Console.WriteLine("no");
+                }
             }
         }
 
+
     }
 }
+}
+
 
