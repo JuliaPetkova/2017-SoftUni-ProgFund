@@ -13,36 +13,27 @@ namespace _6_3_01_ArrayStatistics
             int[] arr = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
             int maxNum = int.MinValue;
             int minNum = int.MaxValue;
-            int sum = 0;
+            long sum = 0;
 
             for (int i = 0; i < arr.Length; i++)
             {
                 sum = sum + arr[i];
 
-                if (minNum > arr[i])
+                if (arr[i] < minNum)
                 {
                     minNum = arr[i];
                 }
-                else
-                {
-                    minNum = minNum;
-                }
 
-                if (maxNum < arr[i])
+                if (arr[i] > maxNum)
                 {
                     maxNum = arr[i];
                 }
-                else
-                {
-                    maxNum = maxNum;
-                }
-
             }
-            double average = (double)sum / arr.Length;
+            double average = sum*1.00 / arr.Length;
             Console.WriteLine($"Min = {minNum}");
             Console.WriteLine($"Max = {maxNum}");
             Console.WriteLine($"Sum = {sum}");
-            Console.WriteLine($"Average = {average:F1}");
+            Console.WriteLine($"Average = {average}");
         }
     }
 }

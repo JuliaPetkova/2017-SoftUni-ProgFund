@@ -1,5 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
 
 
 namespace _program
@@ -8,30 +13,42 @@ namespace _program
     {
         static void Main(string[] args)
         {
-            var arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            string[] str = Console.ReadLine().Split();
 
-            int sum = 0;
-            int count = 0;
+            int numComands = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i <= arr.Length - 1; i++)
+            for (int i = 0; i < numComands; i++)
             {
-                for (int j = i+1; j <= arr.Length - 1; j++)
-                {
-                    sum = arr[i] + arr[j];
+                string[] command = Console.ReadLine().Split();
 
-                    if (arr.Contains(sum))
+                if (command.Length == 1)
+                {
+                    if (command[0] == "Reverse")
                     {
-                        Console.WriteLine($"{i} + {j} == {sum}");
-                        count += 1;
+                        str = str.Reverse().ToArray();
+                    }
+                    else (command[0] == "Distinct")
+                    {
+                        str = str.Distinct().ToArray();
+                    }
+
+                    else
+                    {
+                        if (command[0] == "Replace")
+                        {
+                            int indexToReplace = int.Parse(command[1]);
+                            string wordForReplacing = command[2];
+
+                            str[indexToReplace] = wordForReplacing;
+                        }
                     }
                 }
 
+                Console.WriteLine(string.Join(", ", str));
             }
-            if (count == 0)
-            {
-                Console.WriteLine("No");
-            }          
-
         }
     }
+
 }
+
+
