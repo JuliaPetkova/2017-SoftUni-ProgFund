@@ -4,10 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-
-
-namespace _program
+namespace _6_3_05_PizzaIngredients_2
 {
     class Program
     {
@@ -33,15 +30,10 @@ namespace _program
                     {
                         break;
                     }
-
                 }
             }
             Console.WriteLine($"Made pizza with total of {count} ingredients.");
-            Console.WriteLine($"The ingredients are: {products.Remove(products.Length-2, 2)}.");
-
+            Console.WriteLine($"The ingredients are: {products.Remove(products.Length - 2, 2)}.");
         }
     }
-
 }
-
-
