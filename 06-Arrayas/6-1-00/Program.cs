@@ -13,31 +13,48 @@ namespace _program
     {
         static void Main(string[] args)
         {
-            string[] allProducts = Console.ReadLine().Split();
-            int letters = int.Parse(Console.ReadLine());
+            int[] prices = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int priceJewels = prices[0];
+            int priceGold = prices[1];
 
-            int count = 0;
-            string products = string.Empty;
+            long earnings = 0;
+            long expensеs = 0;
 
-            for (int i = 0; i < allProducts.Length; i++)
+            string str = Console.ReadLine();
+
+            while (str != "Jail Time")
             {
-                if (allProducts[i].Length == letters)
+                string[] currentStr = str.Split(' ');
+
+                string priceEarns = currentStr[0];
+                long priceExps = long.Parse(currentStr[1]);
+
+                expensеs += priceExps;
+
+                foreach (char item in priceEarns)
                 {
-                    count++;
-                    products = products + allProducts[i];
-                    products = products + ", ";
-
-                    Console.WriteLine($"Adding {allProducts[i]}.");
-
-                    if (count == 10)
+                    if (item == '%')
                     {
-                        break;
+                        earnings += priceJewels;
                     }
-
+                    if (item == '$')
+                    {
+                        earnings += priceGold;
+                    }
                 }
+                str = Console.ReadLine();
             }
-            Console.WriteLine($"Made pizza with total of {count} ingredients.");
-            Console.WriteLine($"The ingredients are: {products.Remove(products.Length-2, 2)}.");
+
+
+            long total = Math.Abs(earnings - expensеs);
+            if (earnings >= expensеs)
+            {
+                Console.WriteLine($"Heists will continue. Total earnings: {total}.");
+            }
+            else
+            {
+                Console.WriteLine($"Have to find another job. Lost: {total}.");
+            }
 
         }
     }
