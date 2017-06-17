@@ -11,11 +11,9 @@ namespace _7_1_07_CountNum
         static void Main(string[] args)
         {
             List<int> input = Console.ReadLine().Split().Select(int.Parse).ToList();
-
-            List<int> list = new List<int>();
-            int counter = 0;
-
             input.Sort();
+
+            int countEquals = 1;
 
             for (int i = 0; i < input.Count - 1; i++)
             {
@@ -23,15 +21,13 @@ namespace _7_1_07_CountNum
                 {
                     if (input[i] == input[j])
                     {
-                        counter++;
-                        list.Add(input[i]);
+                        countEquals++;
                     }
                 }
-                Console.WriteLine($"{input[i]} -> {list}");
-                i = i + counter - 1;
-                list = 1;
+                Console.WriteLine($"{input[i]} -> {countEquals}");
+                i = i + (countEquals - 1);
+                countEquals = 1;
             }
-
         }
     }
 }
